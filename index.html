@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+  </style>
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>S P L I<br>T T E R</h3>
+    <div class="holder">
+      <div class="calculator-container">
+        <form class="calculator">
+          <label for="bill">Bill</label>
+          <span class="icon-input">$<input type="text" name="bill" class="bill" value="142.5"></span>
+          <label>Select Tip %</label>
+          <div class="btn-container">
+            <buttton class="calc-btn">5%</buttton>
+            <buttton class="calc-btn">10%</buttton>
+            <buttton class="calc-btn active">15%</buttton>
+            <buttton class="calc-btn">25%</buttton>
+            <buttton class="calc-btn">50%</buttton>
+            <input class=" calc-btn special-input" placeholder="Custom">
+          </div>
+          <label for="people"> Number of People</label>
+          <span class="icon-input">&#9823;<input type="text" class="people" name="people" value="5"></span>
+        </form>
+        <!--  -->
+        <div class="display">
+          <div class="display-container">
+            <div>
+              <h5 class="display-item"><span>Tip Amount</span><br>/ person</h5>
+              <div class="value display-item">$4.27</div>
+              <h5 class="display-item"><span>Total</span><br>/ person</h5>
+              <div class="total display-item">$32.79</div>
+            </div>
+            <button class="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Michael E.</a>.
+  </div>
+</body>
+</html>
